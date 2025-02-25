@@ -61,23 +61,21 @@
 
         // Po načtení stránky nastavíme správnou URL pro video
         document.addEventListener('DOMContentLoaded', function() {
-            const videoUrl = 'dfgcspC72k4';
+            const videoUrl = 'EMDrcHhP3V4';
             const iframe = document.getElementById('youtubeVideo');
             if (iframe) {
                 iframe.src = getYouTubeEmbedUrl(videoUrl);
             }
         });
     </script>
-    <!-- Swiper JS a Fancybox -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="js/contact.js"></script>
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <style>
         .hero-image {
-            background-image: url('Images/original/DJI_20250218105600_0049_D ve velké velikosti.jpeg');
+            background-image: url('Images/hero.jpeg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -272,7 +270,6 @@
                             <svg class="w-6 h-6 text-primary-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            <span>Maximální zastavěná plocha hlavní stavby 450 m²</span>
                         </li>
                     </ul>
                     <p class="mt-4 text-gray-700">
@@ -418,10 +415,7 @@
                             <div class="text-4xl font-bold text-primary-600 mb-1">40%</div>
                             <div class="text-primary-700 font-medium">zastavitelnost</div>
                         </div>
-                        <div class="bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl p-6 transform transition-transform group-hover:scale-105">
-                            <div class="text-4xl font-bold text-primary-600 mb-1">450</div>
-                            <div class="text-primary-700 font-medium">m² max. plocha</div>
-                        </div>
+
                     </div>
                     <p class="text-gray-600 text-lg">Možnost stavby 1-2 podlažního domu s podkrovím. Minimálně 40% pozemku musí zůstat jako zelená plocha.</p>
                 </div>
@@ -477,10 +471,7 @@
                             <div class="text-4xl font-bold text-primary-600 mb-1">5 230</div>
                             <div class="text-primary-700 font-medium">Kč/m²</div>
                         </div>
-                        <div class="bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl p-6 transform transition-transform group-hover:scale-105">
-                            <div class="text-4xl font-bold text-primary-600 mb-1">200</div>
-                            <div class="text-primary-700 font-medium">tis. Kč záloha</div>
-                        </div>
+
                         <div class="bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl p-6 flex items-center justify-center transform transition-transform group-hover:scale-105">
                             <a href="#contact" class="inline-block bg-gradient-to-r from-primary-600 to-primary-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-primary-700 hover:to-primary-800 transition-all">
                                 Sjednat prohlídku
@@ -494,243 +485,74 @@
 </section>
     
 
-    <!-- Fotogalerie -->
-    <section id="gallery" class="py-24 bg-white relative overflow-hidden">
-        <div class="absolute inset-0 bg-primary-50/30 backdrop-blur-3xl opacity-30"></div>
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">Fotogalerie pozemku</h2>
-            <p class="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">Prohlédněte si náš pozemek ze všech úhlů</p>
-            
-            <!-- Swiper Gallery -->
-            <div class="swiper mainSwiper rounded-2xl overflow-hidden shadow-xl">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="Images/original/DJI_20250218105600_0049_D ve velké velikosti.jpeg" data-fancybox="gallery" class="block aspect-video rounded-xl overflow-hidden">
-                            <img src="Images/original/DJI_20250218105600_0049_D ve velké velikosti.jpeg" 
-                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
-                                 alt="Letecký pohled na pozemek 1">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="Images/original/DJI_20250218105659_0054_D ve velké velikosti.jpeg" data-fancybox="gallery" class="block aspect-video rounded-xl overflow-hidden">
-                            <img src="Images/original/DJI_20250218105659_0054_D ve velké velikosti.jpeg" 
-                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
-                                 alt="Letecký pohled na pozemek 2">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="Images/original/DJI_20250218105823_0059_D ve velké velikosti.jpeg" data-fancybox="gallery" class="block aspect-video rounded-xl overflow-hidden">
-                            <img src="Images/original/DJI_20250218105823_0059_D ve velké velikosti.jpeg" 
-                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
-                                 alt="Letecký pohled na pozemek 3">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="Images/original/DJI_20250218105839_0061_D ve velké velikosti.jpeg" data-fancybox="gallery" class="block aspect-video rounded-xl overflow-hidden">
-                            <img src="Images/original/DJI_20250218105839_0061_D ve velké velikosti.jpeg" 
-                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
-                                 alt="Letecký pohled na pozemek 4">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="Images/original/DJI_20250218105929_0066_D ve velké velikosti.jpeg" data-fancybox="gallery" class="block aspect-video rounded-xl overflow-hidden">
-                            <img src="Images/original/DJI_20250218105929_0066_D ve velké velikosti.jpeg" 
-                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
-                                 alt="Letecký pohled na pozemek 5">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="Images/original/DJI_20250203124536_0011_D.JPG" data-fancybox="gallery" class="block aspect-video rounded-xl overflow-hidden">
-                            <img src="Images/original/DJI_20250203124536_0011_D.JPG" 
-                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
-                                 alt="Letecký pohled na pozemek 4">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="Images/original/DJI_20250203124555_0013_D.JPG" data-fancybox="gallery" class="block aspect-video rounded-xl overflow-hidden">
-                            <img src="Images/original/DJI_20250203124555_0013_D.JPG" 
-                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
-                                 alt="Letecký pohled na pozemek 5">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="Images/original/DJI_20250203124630_0014_D.JPG" data-fancybox="gallery" class="block aspect-video rounded-xl overflow-hidden">
-                            <img data-src="Images/original/DJI_20250203124630_0014_D.JPG" 
-                                 class="swiper-lazy w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
-                                 alt="Letecký pohled na pozemek 6">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="Images/original/DJI_20250203124756_0019_D.JPG" data-fancybox="gallery" class="block aspect-video rounded-xl overflow-hidden">
-                            <img data-src="Images/original/DJI_20250203124756_0019_D.JPG" 
-                                 class="swiper-lazy w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
-                                 alt="Letecký pohled na pozemek 7">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="Images/original/DJI_20250203125535_0023_D.JPG" data-fancybox="gallery" class="block aspect-video rounded-xl overflow-hidden">
-                            <img data-src="Images/original/DJI_20250203125535_0023_D.JPG" 
-                                 class="swiper-lazy w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
-                                 alt="Letecký pohled na pozemek 8">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="Images/original/DJI_20250203125606_0027_D.JPG" data-fancybox="gallery" class="block aspect-video rounded-xl overflow-hidden">
-                            <img data-src="Images/original/DJI_20250203125606_0027_D.JPG" 
-                                 class="swiper-lazy w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
-                                 alt="Letecký pohled na pozemek 9">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="Images/original/DJI_20250203125638_0030_D.JPG" data-fancybox="gallery" class="block aspect-video rounded-xl overflow-hidden">
-                            <img data-src="Images/original/DJI_20250203125638_0030_D.JPG" 
-                                 class="swiper-lazy w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
-                                 alt="Letecký pohled na pozemek 10">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="Images/original/DJI_20250218105600_0049_D.JPG" data-fancybox="gallery" class="block aspect-video rounded-xl overflow-hidden">
-                            <img data-src="Images/original/DJI_20250218105600_0049_D.JPG" 
-                                 class="swiper-lazy w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
-                                 alt="Letecký pohled na pozemek 11">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="Images/original/DJI_20250218105659_0054_D.JPG" data-fancybox="gallery" class="block aspect-video rounded-xl overflow-hidden">
-                            <img data-src="Images/original/DJI_20250218105659_0054_D.JPG" 
-                                 class="swiper-lazy w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
-                                 alt="Letecký pohled na pozemek 12">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="Images/original/DJI_20250218105823_0059_D.JPG" data-fancybox="gallery" class="block aspect-video rounded-xl overflow-hidden">
-                            <img data-src="Images/original/DJI_20250218105823_0059_D.JPG" 
-                                 class="swiper-lazy w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
-                                 alt="Letecký pohled na pozemek 13">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="Images/original/DJI_20250218105839_0061_D.JPG" data-fancybox="gallery" class="block aspect-video rounded-xl overflow-hidden">
-                            <img data-src="Images/original/DJI_20250218105839_0061_D.JPG" 
-                                 class="swiper-lazy w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
-                                 alt="Letecký pohled na pozemek 14">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="Images/original/DJI_20250218105929_0066_D.JPG" data-fancybox="gallery" class="block aspect-video rounded-xl overflow-hidden">
-                            <img data-src="Images/original/DJI_20250218105929_0066_D.JPG" 
-                                 class="swiper-lazy w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
-                                 alt="Letecký pohled na pozemek 15">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-pagination !bottom-6"></div>
-                <div class="swiper-button-next !text-white after:!text-3xl hover:bg-black/20 rounded-full p-8 transition-colors"></div>
-                <div class="swiper-button-prev !text-white after:!text-3xl hover:bg-black/20 rounded-full p-8 transition-colors"></div>
-            </div>
 
-            <!-- Thumbnails -->
-            <div class="swiper thumbsSwiper mt-6 px-1">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide cursor-pointer">
-                        <div class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary-500 transition-colors bg-gray-100">
-                            <img src="Images/original/DJI_20250203124239_0005_D.JPG" class="w-full h-full object-cover hover:opacity-90 transition-all" alt="Náhled 1">
-                        </div>
-                    </div>
-                    <div class="swiper-slide cursor-pointer">
-                        <div class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary-500 transition-colors bg-gray-100">
-                            <img src="Images/original/DJI_20250203124255_0006_D.JPG" class="w-full h-full object-cover hover:opacity-90 transition-all" alt="Náhled 2">
-                        </div>
-                    </div>
-                    <div class="swiper-slide cursor-pointer">
-                        <div class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary-500 transition-colors">
-                            <img data-src="Images/original/DJI_20250203124529_0010_D.JPG" class="swiper-lazy w-full h-full object-cover" alt="Náhled 3">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide cursor-pointer">
-                        <div class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary-500 transition-colors">
-                            <img data-src="Images/original/DJI_20250203124536_0011_D.JPG" class="swiper-lazy w-full h-full object-cover" alt="Náhled 4">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide cursor-pointer">
-                        <div class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary-500 transition-colors">
-                            <img data-src="Images/original/DJI_20250203124555_0013_D.JPG" class="swiper-lazy w-full h-full object-cover" alt="Náhled 5">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide cursor-pointer">
-                        <div class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary-500 transition-colors">
-                            <img data-src="Images/original/DJI_20250203124630_0014_D.JPG" class="swiper-lazy w-full h-full object-cover" alt="Náhled 6">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide cursor-pointer">
-                        <div class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary-500 transition-colors">
-                            <img data-src="Images/original/DJI_20250203124756_0019_D.JPG" class="swiper-lazy w-full h-full object-cover" alt="Náhled 7">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide cursor-pointer">
-                        <div class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary-500 transition-colors">
-                            <img data-src="Images/original/DJI_20250203125535_0023_D.JPG" class="swiper-lazy w-full h-full object-cover" alt="Náhled 8">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide cursor-pointer">
-                        <div class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary-500 transition-colors">
-                            <img data-src="Images/original/DJI_20250203125606_0027_D.JPG" class="swiper-lazy w-full h-full object-cover" alt="Náhled 9">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide cursor-pointer">
-                        <div class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary-500 transition-colors">
-                            <img data-src="Images/original/DJI_20250203125638_0030_D.JPG" class="swiper-lazy w-full h-full object-cover" alt="Náhled 10">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide cursor-pointer">
-                        <div class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary-500 transition-colors">
-                            <img data-src="Images/original/DJI_20250218105600_0049_D.JPG" class="swiper-lazy w-full h-full object-cover" alt="Náhled 11">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide cursor-pointer">
-                        <div class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary-500 transition-colors bg-gray-100">
-                            <img data-src="Images/original/DJI_20250218105659_0054_D.JPG" class="swiper-lazy w-full h-full object-cover hover:opacity-90 transition-all" alt="Náhled 12">
-                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide cursor-pointer">
-                        <div class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary-500 transition-colors">
-                            <img src="Images/original/DJI_20250218105823_0059_D.JPG" class="w-full h-full object-cover hover:opacity-90 transition-all" alt="Náhled 13">
-                        </div>
-                    </div>
-                    <div class="swiper-slide cursor-pointer">
-                        <div class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary-500 transition-colors">
-                            <img src="Images/original/DJI_20250218105839_0061_D.JPG" class="w-full h-full object-cover hover:opacity-90 transition-all" alt="Náhled 14">
-                        </div>
-                    </div>
-                    <div class="swiper-slide cursor-pointer">
-                        <div class="aspect-video rounded-lg overflow-hidden border-2 border-transparent hover:border-primary-500 transition-colors">
-                            <img src="Images/original/DJI_20250218105929_0066_D.JPG" class="w-full h-full object-cover hover:opacity-90 transition-all" alt="Náhled 15">
-                        </div>
-                    </div>
+<!-- Fotogalerie -->
+<section id="gallery" class="py-24 bg-gradient-to-br from-primary-50 to-white relative overflow-hidden">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">Fotogalerie</h2>
+        <p class="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">Prohlédněte si pozemek z různých úhlů</p>
+
+        <!-- Hlavní Swiper galerie -->
+        <div class="swiper mySwiper2 mb-4">
+            <div class="swiper-wrapper">
+                <!-- Letecké snímky -->
+                <div class="swiper-slide">
+                    <img src="Images/original/Pozemek_Vejprnice_20250218105427_0044_D.png" alt="Letecký pohled na pozemek 1" class="w-full h-[800px] object-cover rounded-2xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Images/original/Pozemek Vejprnice_20250203124459_0008_D.png" alt="Letecký pohled na pozemek 2" class="w-full h-[800px] object-cover rounded-2xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Images/original/Pozemek_Vejprnice_20250203124518_0009_D.png" alt="Letecký pohled na pozemek 3" class="w-full h-[800px] object-cover rounded-2xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Images/original/Pozemek-Vejprnice_20250218105611_0050_D.png" alt="Letecký pohled na pozemek 4" class="w-full h-[800px] object-cover rounded-2xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Images/original/Pozemek-Vejprnice_20250218105836_0060_D.png" alt="Letecký pohled na pozemek 5" class="w-full h-[800px] object-cover rounded-2xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Images/original/Snimek2.png" alt="Snímek pozemku 1" class="w-full h-[800px] object-cover rounded-2xl">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Images/original/Snimek1.png" alt="Snímek pozemku 2" class="w-full h-[800px] object-cover rounded-2xl">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Thumbnail Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Letecké snímky thumbnails -->
+                <div class="swiper-slide">
+                    <img src="Images/original/Pozemek_Vejprnice_20250218105427_0044_D.png" alt="Letecký pohled na pozemek 1" class="w-full h-32 object-cover rounded-lg cursor-pointer">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Images/original/Pozemek Vejprnice_20250203124459_0008_D.png" alt="Letecký pohled na pozemek 2" class="w-full h-32 object-cover rounded-lg cursor-pointer">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Images/original/Pozemek_Vejprnice_20250203124518_0009_D.png" alt="Letecký pohled na pozemek 3" class="w-full h-32 object-cover rounded-lg cursor-pointer">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Images/original/Pozemek-Vejprnice_20250218105611_0050_D.png" alt="Letecký pohled na pozemek 4" class="w-full h-32 object-cover rounded-lg cursor-pointer">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Images/original/Pozemek-Vejprnice_20250218105836_0060_D.png" alt="Letecký pohled na pozemek 5" class="w-full h-32 object-cover rounded-lg cursor-pointer">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Images/original/Snimek2.png" alt="Snímek pozemku 1" class="w-full h-32 object-cover rounded-lg cursor-pointer">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Images/original/Snimek1.png" alt="Snímek pozemku 2" class="w-full h-32 object-cover rounded-lg cursor-pointer">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
 
 <!-- Hypoteční kalkulačka -->
 <section id="mortgage" class="py-24 bg-gradient-to-br from-primary-50 to-white relative overflow-hidden">
@@ -800,10 +622,11 @@
                 <div class="p-8 space-y-6">
                     <div class="text-center">
                         <div class="w-40 h-40 mx-auto rounded-full overflow-hidden mb-4 ring-4 ring-primary-100 shadow-xl transform hover:scale-105 transition-all duration-300">
-                            <img src="images/michaela.jpg" alt="Michaela Beranová" class="w-full h-full object-cover">
+                            <img src="Images/michaela.jpg" alt="Michaela Beranová" class="w-full h-full object-cover">
                         </div>
                         <h4 class="text-xl font-bold text-gray-900">Michaela Beranová</h4>
                         <p class="text-primary-600 font-medium">Hypoteční specialista</p>
+                        <a href="tel:+420736483169" class="text-gray-600 hover:text-primary-600 transition-colors">+420 736 483 169</a>
                     </div>
 
                     <div class="space-y-4">
@@ -828,8 +651,8 @@
                     </div>
 
                     <div class="pt-4">
-                        <a href="tel:+420777123456" class="block w-full bg-gradient-to-r from-primary-600 to-primary-700 text-white px-6 py-4 rounded-xl font-bold text-lg text-center hover:from-primary-700 hover:to-primary-800 transition-all mb-3">
-                            +420 777 123 456
+                        <a href="tel:+420736483169" class="block w-full bg-gradient-to-r from-primary-600 to-primary-700 text-white px-6 py-4 rounded-xl font-bold text-lg text-center hover:from-primary-700 hover:to-primary-800 transition-all mb-3">
+                            +420 736 483 169
                         </a>
                         <a href="mailto:michaela.beranova@ptf.cz" class="block w-full bg-primary-50 text-primary-700 px-6 py-4 rounded-xl font-bold text-lg text-center hover:bg-primary-100 transition-all">
                             michaela.beranova@ptf.cz
@@ -1047,7 +870,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="h-[700px] w-full">
                 <iframe
                     class="w-full h-full"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.5647563657584!2d13.275945776926385!3d49.7523145714037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470aee90e9e3d0d7%3A0x7f0b57b0a55f71eb!2zU29rb2xza8OhLCAzMzIgMjcgVmVqcHJuaWNlLCDEjGVza28!5e1!3m2!1scs!2scz!4v1708257541000!5m2!1scs!2scz&markers=color:red%7Clabel:P%7C49.7523145714037,13.275945776926385&markers=color:blue%7Clabel:S%7C49.7534,13.2761&markers=color:green%7Clabel:O%7C49.7512,13.2772"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.5647563657584!2d13.275945776926385!3d49.7523145714037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470aee90e9e3d0d7%3A0x7f0b57b0a55f71eb!2zU29rb2xza8OhLCAzMzIgMjcgVmVqcHJuaWNlLCDEjGVza28!5e1!3m2!1scs!2scz!4v1708257541000!5m2!1scs!2scz"
                     style="border:0;"
                     allowfullscreen=""
                     loading="lazy"
@@ -1178,61 +1001,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <!-- Kontaktní formulář -->
     <section id="contact" class="py-24 bg-gradient-to-br from-primary-50 to-white relative overflow-hidden">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">Kontaktujte mě</h2>
-            <p class="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">Máte zájem o pozemek nebo další informace? Neváhejte mě kontaktovat</p>
+            <script>
+                (function (w,d,s,o,f,js,fjs) {
+                    w['ecm-widget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+                    js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+                    js.id = '17-5a4345e2cfc20db946d8662a976213f2'; js.dataset.a = 'ptf'; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+                }(window, document, 'script', 'ecmwidget', 'https://d70shl7vidtft.cloudfront.net/widget.js'));
+            </script>
+                    <div id="f-17-5a4345e2cfc20db946d8662a976213f2"></div>
+                       
 
-            <div class="max-w-3xl mx-auto">
-                <form id="contactForm" class="bg-white rounded-2xl shadow-xl p-8 space-y-6">
-                    <!-- Jméno -->
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Jméno a příjmení</label>
-                        <input type="text" name="name" id="name" required
-                            class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
-                            placeholder="Jan Novák">
-                    </div>
 
-                    <!-- Email -->
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                        <input type="email" name="email" id="email" required
-                            class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
-                            placeholder="jan.novak@email.cz">
-                    </div>
-
-                    <!-- Telefon -->
-                    <div>
-                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Telefon</label>
-                        <input type="tel" name="phone" id="phone" required
-                            class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
-                            placeholder="+420 123 456 789">
-                    </div>
-
-                    <!-- Zpráva -->
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Vaše zpráva</label>
-                        <textarea name="message" id="message" rows="4" required
-                            class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
-                            placeholder="Napište mi svůj dotaz..."></textarea>
-                    </div>
-
-                    <!-- Zprávy o úspěchu/chybě -->
-                    <div id="successMessage" class="hidden p-4 rounded-xl bg-green-50 text-green-700 border border-green-200">
-                        Děkuji za Vaši zprávu! Brzy se Vám ozvu.
-                    </div>
-                    <div id="errorMessage" class="hidden p-4 rounded-xl bg-red-50 text-red-700 border border-red-200">
-                        Omlouváme se, při odesílání zprávy došlo k chybě. Zkuste to prosím znovu.
-                    </div>
-
-                    <!-- Submit tlačítko -->
-                    <div class="pt-4">
-                        <button type="submit" id="submitButton"
-                            class="w-full bg-primary-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition-colors duration-200">
-                            Odeslat zprávu
-                        </button>
-                    </div>
-                </form>
-            </div>
         </div>
     </section>
 
@@ -1360,5 +1139,39 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     </div>
 </footer>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 3,
+            },
+            480: {
+                slidesPerView: 4,
+            },
+            768: {
+                slidesPerView: 5,
+            },
+            1024: {
+                slidesPerView: 6,
+            },
+        },
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+    });
+</script>
+
 </body>
 </html>
