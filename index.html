@@ -80,6 +80,19 @@
             background-position: center;
             background-repeat: no-repeat;
         }
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        .animate-bounce {
+            animation: bounce 2s infinite;
+        }
     </style>
 
     <script>
@@ -187,6 +200,14 @@
                     </a>
                 </div>
             </div>
+        </div>
+        <!-- Animovaná šipka -->
+        <div class="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce">
+            <a href="#video" class="text-white bg-primary-600/70 hover:bg-primary-600/90 transition-all duration-300 rounded-full p-3 shadow-lg">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </a>
         </div>
     </section>
 
